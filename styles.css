@@ -40,14 +40,6 @@ a { color: inherit; }
   backdrop-filter: blur(12px);
 }
 
-.brand img {
-  display: block;
-  width: min(220px, 34vw);
-  max-height: 62px;
-  object-fit: contain;
-  object-position: left center;
-}
-
 nav {
   display: flex;
   gap: clamp(18px, 3vw, 42px);
@@ -507,4 +499,25 @@ footer {
 
 .not-found-page .lead {
   margin-bottom: 38px;
+}
+
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brand img,
+.brand svg {
+  display: block;
+  height: auto;
+  max-height: 72px;
+  width: auto;
+}
+
+.site-header,
+header {
+  overflow: visible;
 }
