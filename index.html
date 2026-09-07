@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/creative-journey-logo.svg" type="image/svg+xml">
+  <title>Creative Journey Press | The Art of Discovery</title>
+  <meta name="description" content="Creative Journey Press creates thoughtfully designed coloring books that invite people to explore places, nature, and creativity through art.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Creative Journey Press home">
+      <img src="assets/creative-journey-logo.svg" alt="Creative Journey">
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="advertising.html">Advertising</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CREATIVE JOURNEY PRESS</p>
+        <h1>Discover the world<br>one page at a time.</h1>
+        <p class="hero-text">
+          Thoughtfully created coloring books inspired by remarkable places,
+          natural beauty, and the simple pleasure of making something your own.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#books">Explore our books</a>
+          <a class="button secondary" href="#about">Our story</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="ridge ridge-back"></div>
+        <div class="ridge ridge-front"></div>
+        <div class="journey-line"></div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <p class="section-kicker">THE ART OF DISCOVERY</p>
+      <h2>Coloring books made for curious minds.</h2>
+      <p class="lead">
+        Creative Journey Press publishes immersive coloring experiences that combine
+        creativity with a sense of place. Our books are designed to be relaxing,
+        approachable, and rewarding while encouraging discovery along the way.
+      </p>
+    </section>
+
+    <section id="books" class="section books">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">OUR PUBLISHING</p>
+          <h2>Creative escapes with a sense of place.</h2>
+        </div>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Landscapes & Travel</h3>
+          <p>
+            Scenic collections inspired by destinations around the United States,
+            Europe, and the wider world.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Nature & Discovery</h3>
+          <p>
+            Pages built around beautiful natural settings, regional character,
+            and details that make each place distinctive.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Relaxation & Creativity</h3>
+          <p>
+            Accessible designs created to offer a calm, enjoyable creative break
+            for adult colorists of varied experience levels.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="section-kicker">ABOUT CREATIVE JOURNEY</p>
+        <h2>Independent publishing with care behind every page.</h2>
+      </div>
+      <div class="split-copy">
+        <p>
+          Creative Journey Press is an independent publishing brand focused on
+          illustrated activity and coloring books. From concept and artwork through
+          layout, production, publishing, and promotion, we manage the creative
+          journey from beginning to end.
+        </p>
+        <p>
+          Our aim is simple: create books people are excited to open, spend time
+          with, and return to.
+        </p>
+      </div>
+    </section>
+
+    <section id="advertising" class="section advertising">
+      <div class="advertising-panel">
+        <div>
+          <p class="section-kicker light">ADVERTISING OPERATIONS</p>
+          <h2>Technology supporting our own publishing business.</h2>
+        </div>
+        <div>
+          <p>
+            Creative Journey develops internal tools and workflows to help manage
+            and understand advertising for our own published titles. These capabilities
+            are intended to improve campaign reporting, keyword and bid analysis,
+            budget management, and operational efficiency across our advertising activity.
+          </p>
+          <p>
+            Our advertising technology is used for Creative Journey's own advertiser
+            accounts and publishing operations. It is not currently offered as a
+            third-party advertising service or commercial software product.
+          </p>
+          <p class="api-note">
+            Any integration with third-party advertising platforms is subject to
+            their applicable authorization, access, and policy requirements.
+          </p>
+          <p class="advertising-link">
+            <a href="advertising.html">Learn more about our advertising technology →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="section-kicker">CONTACT</p>
+      <h2>Creative Journey Press</h2>
+      <p>
+        Publishing, business, and platform-verification inquiries are welcome.
+      </p>
+      <p class="contact-note">
+        Official contact information will be published here before public launch.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/creative-journey-logo.svg" alt="Creative Journey">
+      <span>The Art of Discovery</span>
+    </div>
+    <div class="footer-links">
+      <a href="advertising.html">Advertising Technology</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Creative Journey Press. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
