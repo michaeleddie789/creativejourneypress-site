@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>Amazon Ads Authorization | Creative Journey Press</title>
+</head>
+<body>
+  <h1>Completing Amazon Ads authorization…</h1>
+  <p>This page is returning the authorization result to the Creative Journey application on this computer.</p>
+  <noscript>
+    <p>JavaScript is required to complete authorization.</p>
+  </noscript>
+  <script>
+    (() => {
+      "use strict";
+
+      const source = new URLSearchParams(window.location.search);
+      const target = new URLSearchParams();
+
+      for (const key of ["code", "state", "error", "error_description"]) {
+        if (source.has(key)) {
+          target.set(key, source.get(key));
+        }
+      }
+
+      const local =
+        "http://127.0.0.1:8799/amazon-ads/oauth/local-callback?" +
+        target.toString();
+
+      window.location.replace(local);
+    })();
+  </script>
+</body>
+</html>
